@@ -54,9 +54,9 @@
     <% end %>
   </ul>
 
-  <%= sortable_element( "page_list_#{page.id}", 
-        :complete => visual_effect(:highlight, "page_list_#{page.id}"), 
-        :handle=>'handle',
-        :update=>'flash-content',
-        :url => { :action => "reorder", :id=>page } ) if !page.children.empty? and page.children.length > 1 %>
+  <!--<= sortable_element( "page_list_#{page.id}", -->
+        <!--:complete => visual_effect(:highlight, "page_list_#{page.id}"), -->
+        <!--:handle=>'handle',-->
+        <!--:update=>'flash-content',-->
+        <!--:url => { :action => "reorder", :id=>page } ) if !page.children.empty? and page.children.length > 1 %>-->
 </li>

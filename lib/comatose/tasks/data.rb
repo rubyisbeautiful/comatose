@@ -49,14 +49,14 @@ namespace :comatose do
     end
 
     desc "Loads page tree data FROM_FILE or db/comatose-pages.yml in to TO or Comatose::Page.root"
-    task :import do 
+    task :import do
+
       require "#{Rails.root}/config/environment"
 
-      src = ENV['FROM_FILE'] || 'db/comatose-pages.yml'
+      src = ENV['FROM_FILE'] || "#{Rails.root}/db/comatose-pages.yml"
       root = ENV['TO'] || ''
       target = (root == '') ? Comatose::Page.root : Comatose::Page.find_by_path(root)
       data = YAML::load( File.open(src) )
-      #hash_to_page(data, target)
       if target
         if root == ''
           hash_to_page_tree(data, target)

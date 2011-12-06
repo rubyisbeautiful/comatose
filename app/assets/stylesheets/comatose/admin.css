@@ -190,7 +190,7 @@ BODY {
 
 #content .page-list A.page:hover {
     /*color: blue;*/
-    background: white url(/../images/comatose/title-hover-bg.gif) top left repeat-y;
+    background: white url(/app/assets/images/comatose/title-hover-bg.gif) top left repeat-y;
 }
 
 #content .handle, #content .do-reorder UL LI .handle {

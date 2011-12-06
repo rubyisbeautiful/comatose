@@ -47,7 +47,6 @@ module Comatose
           end
         when opts[:mount]
           namespace(:comatose, :path => "/:locale/comatose") do
-          #  defaults :index => opts[:mount]  do
               constraints(LocaleConstraint) do
                 match '', :to => 'admin#index'
                 resources :pages, :controller => 'admin' do

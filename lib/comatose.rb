@@ -1,4 +1,3 @@
-require 'acts_as_versioned'
 require 'acts_as_list'
 require 'acts_as_tree_rails3'
 require 'redcloth'
@@ -53,8 +52,8 @@ module Comatose
 end
 
 require 'comatose/engine'
-require 'comatose/locale_constraint'
 require 'comatose/routes'
+require 'comatose/locale_constraint'
 
 require 'support/class_options'
 
@@ -64,6 +63,7 @@ require 'comatose/page_wrapper'
 require 'comatose/processing_context'
 require 'comatose/text_filters'
 require 'comatose/version'
+require 'comatose/acts_as_versioned'
 
 require 'support/inline_rendering'
 
