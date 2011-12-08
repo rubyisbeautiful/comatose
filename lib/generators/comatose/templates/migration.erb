@@ -19,6 +19,7 @@ class AddComatoseSupport < ActiveRecord::Migration
         t.string    "author",      :limit => 255
         t.integer   "position",    :default => 0
         t.integer   "version"
+        t.string    "view_model",  :limit=>255
         t.timestamps
       end
 

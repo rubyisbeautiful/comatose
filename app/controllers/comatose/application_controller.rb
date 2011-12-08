@@ -24,7 +24,9 @@ module Comatose
       Comatose::Page.send(Comatose.config.page_finder, *args)
     end
 
-
+    def find_view_model(page, params={})
+      eval "#{page.view_model}ViewModel.new(#{params})"
+    end
 
   end
 end
