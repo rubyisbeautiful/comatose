@@ -1,7 +1,7 @@
 module TranslationFilter
 
   def t(input)
-    I18n.translate(input)
+    Translation.translate(input)
   end
 
 end

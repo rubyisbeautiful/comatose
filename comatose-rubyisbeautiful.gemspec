@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.8.4") if s.respond_to? :required_rubygems_version=
   s.authors = ["Bryan Taylor, Matt McCray, Michael Kovacs"]
-  s.date = "2011-12-08"
+  s.date = "2011-12-12"
   s.description = "Web Content Management in Rails 3."
   s.email = " artofobjects at gmail dot com "
   s.extra_rdoc_files = ["CHANGELOG", "LICENSE", "README", "README.markdown", "lib/comatose.rb", "lib/comatose/acts_as_versioned.rb", "lib/comatose/configuration.rb", "lib/comatose/drop.rb", "lib/comatose/engine.rb", "lib/comatose/filters/inline_filter.rb", "lib/comatose/filters/timeago_filter.rb", "lib/comatose/filters/translation_filter.rb", "lib/comatose/locale_constraint.rb", "lib/comatose/logger.rb", "lib/comatose/page_wrapper.rb", "lib/comatose/processing_context.rb", "lib/comatose/routes.rb", "lib/comatose/tasks/admin.rb", "lib/comatose/tasks/data.rb", "lib/comatose/tasks/setup.rb", "lib/comatose/text_filters.rb", "lib/comatose/version.rb", "lib/generators/comatose/USAGE", "lib/generators/comatose/templates/comatose.rb", "lib/generators/comatose/templates/migration.erb", "lib/generators/comatose/templates/seeds.erb", "lib/generators/comatose_generator.rb", "lib/support/class_options.rb", "lib/support/inline_rendering.rb", "lib/support/route_mapper.rb", "lib/tasks/comatose.rake", "lib/text_filters/markdown.rb", "lib/text_filters/markdown_smartypants.rb", "lib/text_filters/none.rb", "lib/text_filters/rdoc.rb", "lib/text_filters/simple.rb", "lib/text_filters/textile.rb"]

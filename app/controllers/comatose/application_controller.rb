@@ -3,11 +3,9 @@ module Comatose
 
     before_filter :set_locale
 
-
     def comatose_current_user
       @_current_user
     end
-
 
     def set_locale
       locale_language, locale_country = params[:locale].to_s.split('-')
@@ -19,13 +17,8 @@ module Comatose
       logger.debug "Locale set to #{I18n.locale} from param #{params[:locale]}"
     end
 
-
-    def find_page(*args)
-      Comatose::Page.send(Comatose.config.page_finder, *args)
-    end
-
-    def find_view_model(page, params={})
-      eval "#{page.view_model}ViewModel.new(#{params})"
+    def find_page(page_name)
+      Comatose::Page.send(Comatose.config.page_finder, page_name, request, params)
     end
 
   end

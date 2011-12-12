@@ -8,8 +8,7 @@ module Comatose
     # Render a specific page
     def show
       page_name, page_ext = get_page_path
-      page                = find_page(page_name, request)
-      view_model          = find_view_model(page, params.symbolize_keys)
+      page                = find_page(page_name)
       status              = nil
       if page.nil?
         status  = 404
@@ -29,7 +28,7 @@ module Comatose
         rendered_text = page.to_comatose_html({
           'params'       => params.stringify_keys,
           'system'       => system_hash,
-           'view'        => view_model
+           'view'        => page.instance_variable_get("@view_model")
         })
         render :text => rendered_text, :layout => get_page_layout, :status => status
       end
