@@ -2,11 +2,11 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html class="noscript" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=<%%= Comatose.config.content_type %>"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=<%= Comatose.config.content_type %>"/>
     <title>Comatose Admin</title>
     <%= stylesheet_link_tag 'comatose/admin' %>
     <%= javascript_include_tag 'comatose/admin' %>
-    <%= javascript_include_tag "jquery/jquery" %>
+    <%= javascript_include_tag "jquery/jquery", "jquery/jquery.class" %>
     <%= javascript_include_tag "wymeditor/jquery.wymeditor.min" %>
     <%= javascript_include_tag "editor" %>
 

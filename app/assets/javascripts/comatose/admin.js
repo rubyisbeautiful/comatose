@@ -221,7 +221,7 @@ var Layout = {};
 
 // This class allows dom objects to stretch with the browser 
 // (for when a good, cross-browser, CSS approach can't be found)
-Layout.LiquidBase = Class.create();
+Layout.LiquidBase = $.Class.create();
 // Base class for all Liquid* layouts...
 Object.extend(Layout.LiquidBase.prototype, {
   enabled: true,

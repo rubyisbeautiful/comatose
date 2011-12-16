@@ -18,7 +18,6 @@ app/assets/images/comatose/title-hover-bg.gif
 app/assets/javascripts/comatose/admin.js
 app/assets/javascripts/comatose/dragdrop.js
 app/assets/javascripts/editor.js
-app/assets/javascripts/jquery/jquery.js
 app/assets/javascripts/wymeditor.tar
 app/assets/javascripts/wymeditor/iframe/default/lbl-blockquote.png
 app/assets/javascripts/wymeditor/iframe/default/lbl-h1.png
